@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./background-img.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  .outer {
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    width: 95%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  .nav-links > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links > ul > li > a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .nav-links > ul > li > a:hover {
+    background-color: goldenrod;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .nav-links > ul > li > img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img > img {
+    width: 100%;
+    height: 320px;
+    padding: 20px;
+    max-width: 600px;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+  }
+
+  .objective > h2,
+  .objective > h3,
+  .objective > p {
+    color: azure;
+    margin: 10px auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .objective > h2 {
+    font-size: 40px;
+  }
+
+  .objective > h3 {
+    font-size: 35px;
+  }
+
+  .objective > p {
+    font-size: 20px;
+  }
+
+  .skils {
+    color: azure;
+    padding: 20px;
+  }
+
+  .skils > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .skils > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .skils > ul > li {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    width: auto;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .skils > ul > li:hover {
+    background-color: teal;
+  }
+
+  .tools-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tools-img > img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    max-width: 600px;
+  }
+
+  .projects {
+    
+    color: azure;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .projects > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .projects > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .projects > ul > li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 350px;
+    height: 300px;
+  }
+
+  .projects > ul > li > img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .projects > ul > li > img:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+  }
+
+  .contactme {
+    color: azure;
+    width: 90%;
+    
+    margin: auto;
+    padding: 20px;
+    border: 3px solid whitesmoke;
+    border-radius: 50px;
+}
+
+  .contactme > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contactme label {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contactme input[type],
+  .contactme textarea {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px auto;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn > button {
+    background-color: rgb(43, 207, 117);
+    color: azure;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .btn > button:hover {
+    background-color: green;
+  }
+
+  .footer {
+    color: azure;
+    text-align: center;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links > ul {
+      flex-direction: column;
+    }
+
+    .social-links {
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    .skils > ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .projects > ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
